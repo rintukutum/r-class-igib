@@ -105,7 +105,7 @@ nuc <- c('A', 'T', 'G', 'C')
 
 mat <- matrix(data =NA, ncol = 4, nrow=5)
 for(i in 1:5){
-DNA.random <- paste( sample(nuc, 10, replace = TRUE ),
+DNA.random <- paste(sample(nuc, 10, replace = TRUE ),
 					  collapse = '') 
  mat[i,] <- dnaCount.func(DNA=DNA.random)
 }
