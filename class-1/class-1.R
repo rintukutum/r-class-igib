@@ -115,6 +115,13 @@ colnames(mat) <- nuc
 #### rnaCount.func
 
 
+#--------------------
+greet<- function(name){
+	myvec<- c('hello', name)
+	output<-paste(myvec, collapse=" ")
+	return(output)
+	
+}
 
 
 

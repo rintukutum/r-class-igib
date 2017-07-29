@@ -14,6 +14,10 @@
 
 ## class-2
 
+- about git and github
+- install git
+- create new repo
+- add, commit and push
 - matrix
 - data.frame
 - list
