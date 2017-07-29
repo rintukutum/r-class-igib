@@ -95,6 +95,8 @@ print(nuc.count)
 #--------------
 #
 rm(list=ls())
+#-----
+# following paths will change
 setwd('E:\\rintu/office/r-class')
 getwd()
 list.files()
