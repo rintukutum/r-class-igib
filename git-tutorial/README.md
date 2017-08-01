@@ -6,3 +6,9 @@
 # open terminal
 git config --global user.email "your email"
 git config --global user.name "your name"
+
+
+
+# useful short tutorials
+
+- http://rogerdudler.github.io/git-guide/
