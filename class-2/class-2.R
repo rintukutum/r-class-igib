@@ -54,5 +54,47 @@ dnaORrna <- function(sequnce){
 # class-2 materials
 #-----
 # create a matrix
-mat <- matrix(data = NA, ncol = 2, nrow = 5)
+mat <- matrix(data = sample(1:10,100,TRUE), ncol = 10, nrow = 10)
+idx <- sample(1:100,10,FALSE)
+mat[idx] <- NA
+for(i in  1:nrow(mat)){
+	for(j in 1:ncol(mat)){
+		if(is.na(mat[i,j]) == TRUE){
+			cat(paste(c(i,j),collapse=', '))
+			cat('\n')
+		}
+	}
+}
+
+#-----
+# for home work
+
+n <- 1
+for(i in  1:nrow(mat)){
+	for(j in 1:ncol(mat)){
+		if(is.na(mat[i,j]) == TRUE){
+			# NO OPERATION
+		}else{
+			if(n == 1){
+				min <- mat[i,j]
+				max <- mat[i,j]
+				n <- n+1
+			}else{
+			# update min and max
+		
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
