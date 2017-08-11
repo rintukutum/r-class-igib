@@ -82,7 +82,6 @@ for(i in  1:nrow(mat)){
 			}else{
 			# update min and max
 
-			    }
 		
 			}
 		}
