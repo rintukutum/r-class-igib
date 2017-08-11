@@ -81,6 +81,12 @@ for(i in  1:nrow(mat)){
 				n <- n+1
 			}else{
 			# update min and max
+			    if(min > mat[i,j]){
+			      min <- mat[i,j]
+			    }
+			    if(max < mat[i,j]){
+			      max <- mat[i,j]
+			    }
 		
 			}
 		}
