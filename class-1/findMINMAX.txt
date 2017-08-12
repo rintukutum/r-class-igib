@@ -1,0 +1,4 @@
+for (i in 1:ncol(mat)){
+   for (j in 1:nrow(mat)){
+      if (is.na(mat[i,j]== TRUE){
+	    

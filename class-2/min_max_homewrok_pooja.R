@@ -67,12 +67,12 @@ if(n == ''){
 	n<- readline(prompt="Enter values : ")
 	} else{
 		vec_list <-strsplit(n,split=',')[[1]]
-		vec_list <- as.integer(vec_list)
+		vec_list <- as.numeric(vec_list)
 		if(all(is.na(vec_list)) == TRUE){
-			print('wrong value has given, please enter integer value')
+			print('wrong value has given, please enter numeric value')
 			n<- readline(prompt="Enter values : ")
 			vec_list <-strsplit(n,split=',')[[1]]
-			vec_list <- as.integer(vec_list)
+			vec_list <- as.numeric(vec_list)
 			f<-readline(prompt="What you want to find min or max?: ")
 			if (f == 'min'){
 				min.func(vec_list)
@@ -81,7 +81,7 @@ if(n == ''){
 					}
 				} else{
 					vec_list <-strsplit(n,split=',')[[1]]
-					vec_list <- as.integer(vec_list)
+					vec_list <- as.numeric(vec_list)
 					f<-readline(prompt="What you want to find min or max?: ")
 					if (f == 'min'){
 						min.func(vec_list)
