@@ -2,7 +2,7 @@
 
 ## matrix
 
-```{R}
+```{r}
 # empty working space
 rm(list=ls())
 
@@ -51,8 +51,12 @@ solve(mat)
 # resources 
 
 	- [Introduction to matrices](http://www.maths.manchester.ac.uk/~kd/ma2m1/matrices.pdf)
+	
 	- [Virtual cell program](http://vcp.med.harvard.edu/teaching.html)
+	
 	- [Matrix algebra for beginners part-1](http://vcp.med.harvard.edu/papers/matrices-1.pdf)
+	
 	- [Matrix algebra for beginners part-2](http://vcp.med.harvard.edu/papers/matrices-2.pdf)
+	
 	- [Matrix algebra for beginners part-3](http://vcp.med.harvard.edu/papers/matrices-3.pdf)
 
