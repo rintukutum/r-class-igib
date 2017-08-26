@@ -39,4 +39,38 @@ for(i in seq_along(fastaHeaders)){
 		Seqs[[i]] <- myContents[fastaHeaders[i]:length(myContents)]
 	}
 }
+
+convertFasta <- function(x){
+	header <- x[1]
+	seq <- paste(x[-1],collapse='')
+	out <- c(
+		header = header,
+		seq = seq
+	)
+	return(out)
+}
+mySeqs <- lapply(Seqs,convertFasta)
+
+#-----
+# condon conversion
+my_criteria<-function(length){
+    return(paste0(".{",length,"}"));
+}
+get_codon<-function(s,len){
+    output<-regmatches(s, gregexpr(my_criteria(length = len), s))[[1]];
+    ### Above function doesnot include any string of undefined length
+    return(output);
+}
+
+#------
+mySeqs[[1]]['seq']
+getCodon <- function(seq,len=3){
+	subStr <- c()
+	# len <- 4
+	indx <- seq(1,160-(len-1),len)
+	for(i in seq_along(indx)){
+		subStr[i] <- substr(seq,indx[i],indx[i]+(len-1))
+	}
+	return(subStr)
+}
 ```
