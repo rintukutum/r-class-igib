@@ -21,7 +21,7 @@ A <- c('name' = 'A',
        'year' = 2012,
        'department' = 'D1')
 # access information 
-A$name
+A['name']
 ```
 - add more students information using `sample` function
 ```{R}
