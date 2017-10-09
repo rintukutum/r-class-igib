@@ -99,5 +99,15 @@ for( i in 100:200){
 	studentIGIB.2[[i]] <- generateStudentInfo(seed = i)
 }
 
+
+studentIGIB.3 <- list()
+# initialize
+j <- 1
+for( i in 100:200){
+	studentIGIB.3[[j]] <- generateStudentInfo(seed = i)
+	j <- j+1
+}
+
+
 ```
 - now extract information
