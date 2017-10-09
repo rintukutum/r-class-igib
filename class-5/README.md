@@ -1,6 +1,7 @@
 # class 5
 
-We are going to create a list that contain vector with the information about name, age, fellowship, year and department.
+We are going to create a `list` that contain multiple vectors. Each vector contain informations
+about a student with their name, age, fellowship, year and department.
 
 ## Steps
 
