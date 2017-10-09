@@ -108,6 +108,16 @@ for( i in 100:200){
 	j <- j+1
 }
 
+infoIGIB <- list()
+for( i in 1:100){
+	infoIGIB[[i]] <- generateStudentInfo(seed = i)
+}
+# create directory
+dir.create('./data/', showWarnings=FALSE)
+# save data
+save(infoIGIB, file ='./data/infoIGIB.RData')
+
+
 
 ```
 - now extract information
