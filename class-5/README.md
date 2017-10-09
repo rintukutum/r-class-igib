@@ -84,7 +84,19 @@ generateStudentInfo(seed = 123)
     - use `for` loop
 ```{R}
 for( i in 1:100){
+	generateStudentInfo(seed = i)
+}
 
+studentIGIB.1 <- list()
+
+for( i in 1:100){
+	studentIGIB.1[[i]] <- generateStudentInfo(seed = i)
+}
+
+
+studentIGIB.2 <- list()
+for( i in 100:200){
+	studentIGIB.2[[i]] <- generateStudentInfo(seed = i)
 }
 
 ```
