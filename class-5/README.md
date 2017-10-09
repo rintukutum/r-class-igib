@@ -22,6 +22,16 @@ A <- c('name' = 'A',
        'department' = 'D1')
 # access information 
 A['name']
+
+# or 
+A[1]
+
+# print using for loop
+
+for( i in 1:length(A)){
+	print(A[i])
+}
+
 ```
 - add more students information using `sample` function
 ```{R}
