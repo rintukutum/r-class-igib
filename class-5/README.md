@@ -56,7 +56,7 @@ student <-c(
 ```
 - convert above into a function
 ```{R}
-genearteStudentInfo <- function(seed){
+generateStudentInfo <- function(seed){
 	set.seed(seed)
 	# do `?set.seed` for more information
 
@@ -77,7 +77,7 @@ genearteStudentInfo <- function(seed){
 	return(student)
 }
 
-genearteStudentInfo(seed = 123)
+generateStudentInfo(seed = 123)
 ```
 
 - include all the student information into `infoIGIB` list
