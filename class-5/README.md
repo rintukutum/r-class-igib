@@ -46,7 +46,8 @@ student <-c(
 ```
 
 - include all the student information into `infoIGIB` list
- - use for loop
+    - use for loop
 ```{R}
 
+```
 - now extract information
