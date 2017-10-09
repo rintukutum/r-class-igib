@@ -20,16 +20,21 @@ A <- c('name' = 'A',
        'fellowship' = 'F1',
        'year' = 2012,
        'department' = 'D1')
-
+# access information 
+A$name
 ```
 - add more students information using `sample` function
 ```{R}
 set.seed(123)
-name = sample(LETTERS,1)
-age = sample(22:28,1)
-fellowship = sample(c('F1','F2','F3','F4'),1)
-year = sample(c(2010:2016),1)
-department = sample(c('D1','D2','D3','D4'),1)
+# do `?set.seed` for more information
+
+name = sample(x = LETTERS, size = 1)
+# do `?sample` for more information
+
+age = sample(x = 22:28, size = 1)
+fellowship = sample(x = c('F1','F2','F3','F4'), size = 1)
+year = sample(x = c(2010:2016), size = 1)
+department = sample(x = c('D1','D2','D3','D4'), size = 1)
 student <-c(
     name = name,
     age = age,
@@ -41,4 +46,7 @@ student <-c(
 ```
 
 - include all the student information into `infoIGIB` list
+ - use for loop
+```{R}
+
 - now extract information
