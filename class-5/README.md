@@ -54,11 +54,38 @@ student <-c(
 )
 
 ```
+- convert above into a function
+```{R}
+genearteStudentInfo <- function(seed){
+	set.seed(seed)
+	# do `?set.seed` for more information
+
+	name = sample(x = LETTERS, size = 1)
+	# do `?sample` for more information
+
+	age = sample(x = 22:28, size = 1)
+	fellowship = sample(x = c('F1','F2','F3','F4'), size = 1)
+	year = sample(x = c(2010:2016), size = 1)
+	department = sample(x = c('D1','D2','D3','D4'), size = 1)
+	student <-c(
+		name = name,
+		age = age,
+		fellowship = fellowship,
+		year = year,
+		department = department
+	)
+	return(student)
+}
+
+genearteStudentInfo(seed = 123)
+```
 
 - include all the student information into `infoIGIB` list
     - use `for` loop
-    - 
 ```{R}
+for( i in 1:100){
+
+}
 
 ```
 - now extract information
