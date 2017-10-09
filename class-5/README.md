@@ -13,7 +13,7 @@ infoIGIB <- list()
 ```
 - now add information about a student. 
   Example, here `A` is a vector with 5 elements namely, `name`, `age`, `fellowship`, `year` and `department`.
-  We can access each of them using dollar symbol `$`, `A$name` which will give us `A` as output.
+  We can access each of them using dollar symbol `['name']`, `A['name']` which will give us `A` as output.
 ```{R}
 A <- c('name' = 'A',
        'age' = 28,
@@ -46,7 +46,8 @@ student <-c(
 ```
 
 - include all the student information into `infoIGIB` list
-    - use for loop
+    - use `for` loop
+    - 
 ```{R}
 
 ```
