@@ -47,5 +47,8 @@ dat3 <- dat
 for(i in 1:ncol(dat3)){
    dat3[,i] = fac2charNum(dat3[,i])
 }
+colnames(dat3) <- names(infoIGIB[[1]])
+save(dat3, file= './data/dat3.RData')
+
 
 ```
