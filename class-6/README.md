@@ -11,6 +11,11 @@ load('./data/infoIGIB.RData')
 ## store above information list into data.frame
 
 ```{R}
+mat <- matrix(data = NA, nrow=100, ncol = 5)
 
+Len <- length(infoIGIB)
+for( i  in 1:Len){
+    mat[i, ] <- infoIGIB[[i]]
+}
 
 ```
