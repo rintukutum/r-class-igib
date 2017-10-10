@@ -18,4 +18,7 @@ for( i  in 1:Len){
     mat[i, ] <- infoIGIB[[i]]
 }
 
+dat <- data.frame(mat)
+
+
 ```
