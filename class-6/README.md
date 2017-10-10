@@ -35,9 +35,17 @@ fac2charNum <- function(x){
     if(status){
        out <- x.c
     }else{
-       out <- x.n
+       out <- as.numeric(x.n)
     }
     return(out)
+}
+
+#-------
+dat2  <- apply(dat, 2, fac2charNum)
+
+dat3 <- dat
+for(i in 1:ncol(dat3)){
+   dat3[,i] = fac2charNum(dat3[,i])
 }
 
 ```
