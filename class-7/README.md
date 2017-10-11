@@ -20,5 +20,15 @@ for( i in 1:length(departments)){
     idx <- dat3$department == departments[i]
     depart.l[[i]] <- dat3[idx, ]
 }
+names(depart.l) <- departments
+# get Age
+getAge <- function(x){
+   age <- x$age
+   return(age)  
+}
+
+# lapply to extract age
+age.depart <- lapply(depart.l, getAge)
+
 
 ```
